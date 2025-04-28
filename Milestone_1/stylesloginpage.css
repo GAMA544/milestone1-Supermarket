@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: url('imagenes/fondo_login.png') no-repeat center center/cover;
+    background-attachment: fixed;
+  }
+  
+
+img{
+  max-width: 100%;
+}
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#cabecera{
+  background-color: #111419;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  background-color: #EFF3F4;
+  padding: 100px 0 0 0;
+  height: auto;
+}
+
+  
+
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 30px;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a{
+  font-size: 18px;
+  padding: 20px;
+  color: #9BCE21;
+  display: block;
+}
+
+.menu .navbar ul li a:hover{
+  color: #ffffff;
+}
+
+#menu{
+  display: none;
+}
+
+.menu-icono{
+  width: 25px;
+}
+
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+
+.submenu{
+  position: relative;
+}
+
+.submenu #carrito{
+  display: none;
+}
+
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur(10px);
+  top: 100%;
+  z-index: 1;
+  background-color: #4E4B5076;
+  padding: 20px;
+  min-width: 400px;
+}
+
+table{
+  width: 100%;
+}
+
+th, td{
+  color: #ffffff;
+}
+
+.borrar{
+  background-color: #9BCE21;
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-3{
+    background-color: #9BCE21;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 11px 35px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+
+.btn-3:hover{
+background-color: #13462E;
+}
+
+.footer{
+  background-color: #13462E;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 250px; /* más juntitas */
+  flex-wrap: wrap;
+}
+
+
+.link h3{
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.link a{
+  color:#AEAFAF;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.link a:hover{
+  color:#9BCE21;
+}
+
+.login-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('imagenes/login-background.png') no-repeat center center/cover;
+    padding: 50px 20px;
+  }
+  
+  .login-form {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111419;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #515557;
+  }
+  
+  .input-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #9BCE21;
+    background-color: #ffffff;
+  }
+  
+  .btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #9BCE21;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-login:hover {
+    background-color: #13462E;
+  }
+  
+  .signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #515557;
+  }
+  
+  .signup-text a {
+    color: #9BCE21;
+    text-decoration: none;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  
+
+@media (max-width: 991px){
+  .menu{
+    padding: 20px;
+  }
+
+  .menu label{
+    display: initial;
+  }
+
+  .menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FF9100;
+    display: none;
+  }
+
+  .menu .navbar ul li{
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar{
+    display: initial;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .menu .navbar ul li a {
+    color: #111419;
+  }
+
+  .menu .navbar ul li a:hover{
+    color: #ffffff;
+  }
+
+  .submenu:hover #carrito{
+    width: 100%;
+  }
+
+  .header{
+    padding: 50px 0 0 0;
+  }
+
+  .header-content{
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-txt{
+    margin-right: 0;
+  }
+
+  .footer{
+    padding: 30px;
+  }
+
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+  }
+}
