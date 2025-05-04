@@ -10,7 +10,7 @@
 
 ## 2. Requisitos
 
-### 2.1. Requisitos Funcionais do Sistema (conforme especificação da atividade)
+### 2.1. Requisitos Funcionais do Sistema
 
 - O sistema deve ter dois tipos de usuários: **Clientes** e **Administradores**.
 - **Administradores**:
@@ -29,7 +29,14 @@
 - O sistema deve:
   - Ser **acessível** e **usável**.
   - Ser **responsivo**, ou seja, reagir bem às ações do usuário.
-- Funcionalidade adicional específica: será definida nas próximas fases.
+    
+### 2.2. Funcionalidade Específica do Projeto
+
+A loja implementa uma funcionalidade especial chamada **“Produtos Mais Vendidos”**, visível no catálogo de produtos. Essa funcionalidade exibe uma seleção automática dos produtos com maior número de vendas, permitindo que os usuários vejam rapidamente os itens mais populares.
+
+Atualmente, essa funcionalidade está representada de forma estática, mas nas próximas etapas será conectada ao backend, que calculará dinamicamente os produtos com maior quantidade vendida (`quantidade_vendida`).
+
+Essa funcionalidade contribui para a experiência do usuário ao destacar itens com maior interesse do público, facilitando a tomada de decisão e promovendo a visibilidade de produtos populares.
 
 ---
 
