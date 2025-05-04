@@ -1,82 +1,79 @@
 # 📄 Relatório de Projeto – Milestone 1: Mockups da Loja Online
 
 ## 1. Identificação do Grupo
-- **Nome do Aluno**: [Ari Manuel Gamboa Aguilar]
-- **Número USP**: [16796572]
-- **Nome do Aluno**: [Luis Enrique Asuncion Velasquez]
-- **Número USP**: [16796593]
-- **Nome do Aluno**: [Sandro Fabrizio Cárdenas Vilca]
-- **Número USP**: [16796589]
+
+- **Ari Manuel Gamboa Aguilar** – USP nº 16796572  
+- **Luis Enrique Asuncion Velasquez** – USP nº 16796593  
+- **Sandro Fabrizio Cárdenas Vilca** – USP nº 16796589  
 
 ---
 
 ## 2. Requisitos
 
-### 2.1. Requisitos Iniciais
-- Desenvolver um mockup da interface gráfica da aplicação de uma Loja Online com fidelidade média-alta.
-- Utilizar HTML5 e CSS3 para construir as principais telas.
-- Adotar o estilo de navegação Single-Page Application (SPA).
-- Criar mockups estáticos de todas as telas principais.
-- Representar o fluxo de navegação através de um diagrama.
+### 2.1. Requisitos Funcionais do Sistema (conforme especificação da atividade)
 
-### 2.2. Novos Requisitos Acrescentados
-- Inclusão da página "Contato" para comunicação com a loja.
-- Organização do menu de navegação para facilitar o acesso às principais seções: Home, Produtos, Contato e Login.
+- O sistema deve ter dois tipos de usuários: **Clientes** e **Administradores**.
+- **Administradores**:
+  - Podem cadastrar, atualizar e remover produtos e usuários.
+  - Devem ter os campos: nome, ID, telefone e email.
+- **Clientes**:
+  - Acessam a loja para comprar produtos.
+  - Devem ter os campos: nome, ID, endereço, telefone e email.
+- **Produtos/Serviços**:
+  - Campos obrigatórios: nome, ID, foto, descrição, preço, quantidade em estoque, quantidade vendida.
+  - Podem ser adicionados ao carrinho, com escolha de quantidade.
+  - O estoque é atualizado após compra.
+- **Carrinho de Compras**:
+  - Armazena produtos até o pagamento.
+  - O pagamento pode ser feito com qualquer número de cartão de crédito (simulado).
+- O sistema deve:
+  - Ser **acessível** e **usável**.
+  - Ser **responsivo**, ou seja, reagir bem às ações do usuário.
+- Funcionalidade adicional específica: será definida nas próximas fases.
 
 ---
 
 ## 3. Descrição do Projeto
 
-### 3.1. Funcionalidades Implementadas
-- **Página Inicial (Home)**: Exibe uma breve apresentação da loja, destaques de ofertas e acesso ao menu de navegação.
-- **Página de Login**: Interface para a autenticação de usuários (simulada, estática).
-- **Página de Contato**: Formulário para envio de mensagens à loja.
-- **Página de Catálogo de Produtos**: Mockup desenvolvido no Figma exibindo a organização dos produtos em categorias.
+### 3.1. Telas Implementadas em HTML/CSS
 
-### 3.2. Diagrama de Navegação
-O diagrama de navegação foi criado para ilustrar o fluxo entre as telas principais do sistema, respeitando o estilo de Single-Page Application (SPA).
+As seguintes páginas foram desenvolvidas com HTML5 e CSS3:
 
-Fluxo principal:
-- Home → Login
-- Home → Contato
-- Home → Produtos
-- Produtos → Home
+- `homepage.html` – Home page com apresentação e navegação.
+- `loginpage.html` – Tela de login estática.
+- `contactopage.html` – Formulário de contato com campos nome, e-mail e mensagem.
 
-*O diagrama completo está disponível nos arquivos do projeto.*
+#### 🖼️ Capturas das Telas HTML Implementadas
 
-### 3.3. Mockups das Telas
-As telas principais foram desenvolvidas utilizando HTML5 e CSS3 (Home, Login, Contato) e uma tela adicional (Catálogo de Produtos) foi criada como mockup no Figma.
+- **Home Page**  
+  ![Home Page](Milestone_1/Mockups/Home_Page.png)
 
----
+- **Página de Login**  
+  ![Login Page](./img/loginpage.png)
 
-## 4. Comentários sobre o Código
-- O código HTML5 foi estruturado com tags semânticas para promover acessibilidade e organização.
-- O CSS3 foi modularizado em arquivos separados para cada página.
-- Foram adotadas boas práticas de padronização e clareza no desenvolvimento.
-- O projeto foca inicialmente em telas estáticas, preparando a base para futuras funcionalidades dinâmicas.
+- **Página de Contato**  
+  ![Contato Page](./img/contactopage.png)
 
----
+### 3.2. Telas Criadas em Mockup (Figma)
 
-## 5. Plano de Testes
-- Testes manuais realizados para verificar:
-  - Carregamento correto dos arquivos HTML e CSS.
-  - Consistência visual nas diferentes telas.
-  - Navegação entre páginas simulada através dos menus.
+As telas abaixo foram criadas no Figma e exportadas como imagens:
 
-Plano Futuro:
-- Utilizar ferramentas de teste automatizado como Selenium para validar a interface quando dinâmicas forem implementadas.
+- Página de catálogo de produtos
+- Página de detalhes do produto
+- Página de carrinho de compras
+- Página de registro de usuário
+- Tela administrativa (CRUD de produtos e usuários)
+
+#### 🖼️ Mockups (Figma)
+
+- **Catálogo de Produtos**  
+  ![Catálogo](./img/productspage.png)
+
+- *(Adicione mais imagens se necessário)*
 
 ---
 
-## 6. Resultados dos Testes
-- Todas as páginas abriram corretamente nos navegadores testados (Chrome, Firefox, Edge).
-- As estruturas HTML e os estilos CSS aplicados funcionaram como esperado.
-- Navegação simulada entre as páginas seguindo o fluxo proposto.
+## 4. Diagrama de Navegação
 
----
-
-## 7. Procedimentos de Build
-
-### 7.1. Requisitos
-- Navegador Web moderno: Google Chrome, Mozilla Firefox ou Microsoft Edge.
+Abaixo está o diagrama representando as rotas entre as principais páginas do sistema:
 
