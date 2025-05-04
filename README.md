@@ -49,10 +49,10 @@ As seguintes páginas foram desenvolvidas com HTML5 e CSS3:
   ![Home Page](Milestone_1/Mockups/Home_Page.png)
 
 - **Página de Login**  
-  ![Login Page](./img/loginpage.png)
+  ![Login Page](Milestone_1/Mockups/Log_In.png)
 
 - **Página de Contato**  
-  ![Contato Page](./img/contactopage.png)
+  ![Contato Page](Milestone_1/Mockups/Contáctanos.png)
 
 ### 3.2. Telas Criadas em Mockup (Figma)
 
@@ -62,14 +62,20 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
 - Página de detalhes do produto
 - Página de carrinho de compras
 - Página de registro de usuário
-- Tela administrativa (CRUD de produtos e usuários)
 
 #### 🖼️ Mockups (Figma)
 
 - **Catálogo de Produtos**  
-  ![Catálogo](./img/productspage.png)
+  ![Catálogo](Milestone_1/Mockups/productspage.png)
 
-- *(Adicione mais imagens se necessário)*
+- **Detalhes do produto**
+  ![Detalhes](Milestone_1/Mockups/Sobreo o Producto.png)
+
+- **Carrinho de compras**
+  ![Carrinho](Milestone_1/Mockups/Carrito de Compras.png)
+
+- **Registro de usuário**
+  ![Registro](Milestone_1/Mockups/Register de Usuarios.png)
 
 ---
 
