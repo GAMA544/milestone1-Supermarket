@@ -80,7 +80,3 @@ Plano Futuro:
 ### 7.1. Requisitos
 - Navegador Web moderno: Google Chrome, Mozilla Firefox ou Microsoft Edge.
 
-### 7.2. Passos para Executar o Projeto
-1. Clonar o repositório:
-   ```bash
-   git clone https://github.com/[seu-usuario]/[seu-repositorio].git
