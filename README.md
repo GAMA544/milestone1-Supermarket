@@ -69,13 +69,13 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
   ![Catálogo](Milestone_1/Mockups/productspage.png)
 
 - **Detalhes do produto**
-  ![Detalhes](Milestone_1/Mockups/Sobreo o Producto.png)
+  ![Detalhes](Milestone_1/Mockups/Sobreo_o_Producto.png)
 
 - **Carrinho de compras**
-  ![Carrinho](Milestone_1/Mockups/Carrito de Compras.png)
+  ![Carrinho](Milestone_1/Mockups/Carrito_de_Compras.png)
 
 - **Registro de usuário**
-  ![Registro](Milestone_1/Mockups/Register de Usuarios.png)
+  ![Registro](Milestone_1/Mockups/Register_de_Usuarios.png)
 
 ---
 
