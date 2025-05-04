@@ -83,3 +83,80 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
 
 Abaixo está o diagrama representando as rotas entre as principais páginas do sistema:
 
+![Registro](Milestone_1/Diagrama_navegacion/navegation_diagram.jpg)
+
+---
+
+## 5. Comentários sobre o Código
+
+- Estrutura clara com `header`, `main`, `footer`.
+- Navegação simulada por menus e links estáticos.
+- CSS modularizado por página.
+- As telas têm estilo visual coeso e moderno.
+
+---
+
+## 6. Plano de Testes
+
+**Testes manuais realizados:**
+- Carregamento correto dos arquivos HTML e CSS em navegadores modernos.
+- Checagem da responsividade básica das páginas.
+- Verificação de funcionamento dos links de navegação.
+
+**Futuro:**
+- Testes automatizados com ferramentas como Selenium.
+- Integração de validações, autenticação e persistência de dados.
+
+---
+
+## 7. Resultados dos Testes
+
+- As 3 páginas HTML renderizam corretamente no Chrome, Firefox e Edge.
+- Estilos e estrutura visual mantêm consistência.
+- Links de navegação operam de acordo com o fluxo proposto.
+
+---
+
+## 8. Procedimentos de Execução
+
+### 8.1. Requisitos
+- Navegador atualizado: Chrome, Firefox ou Edge.
+
+### 8.2. Como Executar
+1. Clonar o repositório:
+   ```bash
+   git clone https://github.com/GAMA544/milestone1-Supermarket.git
+2. **Acessar a pasta do projeto.**
+
+3. **Abrir localmente os seguintes arquivos HTML em seu navegador:**
+
+   - `homepage.html`
+   - `loginpage.html`
+   - `contactopage.html`
+
+---
+
+## 9. Problemas Encontrados
+
+- Tempo limitado para implementar navegação dinâmica no estilo SPA com JavaScript.
+- Integração com backend (servidor e banco de dados) ainda não realizada.
+- Melhorias futuras planejadas para responsividade completa e acessibilidade (uso em diferentes tamanhos de tela e dispositivos).
+
+---
+
+## 10. Comentários Finais
+
+- O **Milestone 1** cumpre os objetivos principais: mockups das telas, proposta de navegação clara e desenvolvimento das páginas iniciais com HTML5/CSS3.
+- O projeto está bem estruturado para ser expandido nas próximas etapas com JavaScript dinâmico, funcionalidades completas, banco de dados e autenticação.
+- A equipe seguiu boas práticas de separação de arquivos, clareza de layout e organização do repositório.
+
+---
+
+## ✅ Arquivos Incluídos no Repositório
+
+- `homepage.html`, `loginpage.html`, `contactopage.html`
+- `styleshomepage.css`, `stylesloginpage.css`, `stylescontactopage.css`
+- **Mockups exportados do Figma:** armazenados na pasta `/img`
+- **Diagrama de navegação:** `./img/navegation_diagram.png`
+- `README.md` contendo este relatório completo
+
