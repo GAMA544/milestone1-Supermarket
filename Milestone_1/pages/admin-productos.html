@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Nest Supermarkt</title>
+  <link rel="stylesheet" href="../styles/styles_general.css">
+  <link rel="stylesheet" href="../styles/admin-productos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="../imagenes/logo_supermarket.png" alt="Logo Nest Supermarket">
+        <nav class="links-nav">
+            <a href="admin-productos.html" class="painel-activo">Produtos</a>
+            <a href="admin-usuarios.html">Usuários</a>
+        </nav>
+        <div class="usuario">
+            <div class="perfil">
+                <span>Ari Gamboa</span>
+                <img src="https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/488706083_580458405050241_5133305351563898061_n.jpg?ccb=11-4&oh=01_Q5Aa1QGDUJvvIZttf9qdWp8lICJxCNTKttI0DhhOOHvUbkkebQ&oe=68260DD0&_nc_sid=5e03e0&_nc_cat=110" alt="Admin Profile">
+            </div>
+        </div>
+    </header>  
+
+    <main class="container-center">
+        <h1 class="page-title">Painel de administração de produtos</h1>
+        <p class="page-subtitle">Adicione, edite e exclua produtos</p>
+    
+        <div class="filtros-barra">
+          <div class="filtros-esquerda">
+            <input type="text" placeholder="Buscar produto..." class="filtro-busca" />
+            <select name="categoria" class="filtro-categoria">
+              <option value="tudo">Todas as categorias</option>
+              <option value="frutas">Frutas</option>
+              <option value="laticinios">Laticínios</option>
+              <option value="graos">Grãos</option>
+            </select>
+          </div>
+          <a class="btn btn-primary" href="admin-edit-product.html">Adicionar Produto</a>
+        </div>
+        
+
+        <div class="admin-table-container">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Produto</th>
+                  <th>Apresentação</th>
+                  <th>Categoria</th>
+                  <th>Preço</th>
+                  <th>Estoque</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+            </table>
+          
+            <div class="scrollable-tbody">
+              <table class="admin-table">
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="asset-name">
+                          <img src="https://acortar.link/CKxutN" alt="Banana" class="asset-icon">
+                          <span>Banana Prata</span>
+                        </td>
+                        <td>1 un.</td>
+                        <td>Frutas</td>
+                        <td>R$4,50</td>
+                        <td>120</td>
+                        <td class="action-buttons">
+                            <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="asset-name">
+                          <img src="https://acortar.link/1mUT24" alt="Maçã" class="asset-icon">
+                          <span>Maçã Fuji</span>
+                        </td>
+                        <td>1 kg</td>
+                        <td>Frutas</td>
+                        <td>R$6,90</td>
+                        <td>85</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>3</td>
+                        <td class="asset-name">
+                          <img src="https://trela.com.br/_next/image?url=https%3A%2F%2Fprod-zapt-images.s3.sa-east-1.amazonaws.com%2Fproducts%2Fe68246db-30a0-442d-975c-42b5514c0668.png&w=3840&q=75" alt="Alface" class="asset-icon">
+                          <span>Alface Crespa</span>
+                        </td>
+                        <td>1 un.</td>
+                        <td>Verduras</td>
+                        <td>R$2,90</td>
+                        <td>60</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>4</td>
+                        <td class="asset-name">
+                          <img src="https://coopsp.vtexassets.com/arquivos/ids/221735-800-auto?v=637919568125830000&width=800&height=auto&aspect=true" alt="Leite" class="asset-icon">
+                          <span>Leite Integral</span>
+                        </td>
+                        <td>1 L</td>
+                        <td>Laticínios</td>
+                        <td>R$4,25</td>
+                        <td>210</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>5</td>
+                        <td class="asset-name">
+                          <img src="https://rapidmultiservice.com/wp-content/uploads/2023/04/043-Arroz-1-lb-Grano-Largo.jpg" alt="Arroz" class="asset-icon">
+                          <span>Arroz Branco</span>
+                        </td>
+                        <td>5 kg</td>
+                        <td>Grãos</td>
+                        <td>R$21,90</td>
+                        <td>75</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>6</td>
+                        <td class="asset-name">
+                          <img src="https://muffatosupermercados.vtexassets.com/arquivos/ids/274444/0000000089470.jpg?v=637332612238700000" alt="Frango" class="asset-icon">
+                          <span>Peito de Frango</span>
+                        </td>
+                        <td>1 kg</td>
+                        <td>Carnes</td>
+                        <td>R$17,50</td>
+                        <td>40</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>7</td>
+                        <td class="asset-name">
+                          <img src="https://phygital-files.mercafacil.com/cenourao-bucket/uploads/produto/cenoura_kg_1c9753d4-addc-45e1-978a-050b83289827.png" alt="Cenoura" class="asset-icon">
+                          <span>Cenoura</span>
+                        </td>
+                        <td>1 kg</td>
+                        <td>Legumes</td>
+                        <td>R$3,80</td>
+                        <td>90</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>8</td>
+                        <td class="asset-name">
+                          <img src="https://www.infoescola.com/wp-content/uploads/2011/01/tomate_345187874.jpg" alt="Tomate" class="asset-icon">
+                          <span>Tomate Italiano</span>
+                        </td>
+                        <td>1 kg</td>
+                        <td>Legumes</td>
+                        <td>R$7,20</td>
+                        <td>55</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>9</td>
+                        <td class="asset-name">
+                          <img src="https://www.almanaquedamulher.com/wp-content/uploads/2020/06/Ovo-1.jpg" alt="Ovos" class="asset-icon">
+                          <span>Ovos Brancos</span>
+                        </td>
+                        <td>12 un.</td>
+                        <td>Laticínios</td>
+                        <td>R$9,90</td>
+                        <td>110</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>10</td>
+                        <td class="asset-name">
+                          <img src="https://phygital-files.mercafacil.com/catalogo/uploads/produto/refrigerante_coca_cola_2_5_litros_bc932513-4607-4451-8b60-d5db39322a8c.jpg" alt="Refrigerante" class="asset-icon">
+                          <span>Refrigerante Cola</span>
+                        </td>
+                        <td>2 L</td>
+                        <td>Bebidas</td>
+                        <td>R$6,50</td>
+                        <td>130</td>
+                        <td class="action-buttons">
+                          <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+                          <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+    
+    
+</body>
+</html>

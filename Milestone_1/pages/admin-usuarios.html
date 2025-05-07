@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Administração de Usuários</title>
+  <link rel="stylesheet" href="../styles/styles_general.css">
+  <link rel="stylesheet" href="../styles/admin-productos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <img class="logo" src="../imagenes/logo_supermarket.png" alt="Logo Nest Supermarket">
+  <nav class="links-nav">
+    <a href="admin-productos.html">Produtos</a>
+    <a href="admin-usuarios.html" class="painel-activo">Usuários</a>
+  </nav>
+  <div class="usuario">
+    <div class="perfil">
+      <span>Ari Gamboa</span>
+      <img src="https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/488706083_580458405050241_5133305351563898061_n.jpg?ccb=11-4&oh=01_Q5Aa1QGDUJvvIZttf9qdWp8lICJxCNTKttI0DhhOOHvUbkkebQ&oe=68260DD0&_nc_sid=5e03e0&_nc_cat=110" alt="Admin Profile">
+    </div>
+  </div>
+</header>
+
+<main class="container-center">
+  <h1 class="page-title">Painel de administração de usuários</h1>
+  <p class="page-subtitle">Adicione, edite e exclua usuários</p>
+
+  <div class="filtros-barra">
+    <div class="filtros-esquerda">
+      <input type="text" placeholder="Buscar usuário..." class="filtro-busca" />
+    </div>
+    <a class="btn btn-primary" href="#">Adicionar Administrador</a>
+  </div>
+
+  <div class="admin-table-container">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Função</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+    </table>
+
+    <div class="scrollable-tbody">
+      <table class="admin-table">
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>João Silva</td>
+            <td>joao@nest.com</td>
+            <td>Administrador</td>
+            <td>Ativo</td>
+            <td class="action-buttons">
+              <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+              <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Maria Souza</td>
+            <td>maria@nest.com</td>
+            <td>Cliente</td>
+            <td>Inativo</td>
+            <td class="action-buttons">
+              <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+              <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pedro Lima</td>
+            <td>pedro@nest.com</td>
+            <td>Cliente</td>
+            <td>Ativo</td>
+            <td class="action-buttons">
+              <button class="btn-icon edit"><i class="fas fa-edit"></i></button>
+              <button class="btn-icon delete"><i class="fas fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <!-- ... más filas -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

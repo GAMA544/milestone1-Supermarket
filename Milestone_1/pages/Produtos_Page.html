@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos - Nest Supermarkt</title>
+  <link rel="stylesheet" href="../styles/styles_general.css">
+  <link rel="stylesheet" href="../styles/stylesproducts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img class="logo" src="../imagenes/logo_supermarket.png" alt="Logo Nest Supermarket">
+    <nav class="links-nav">
+      <a href="homepage.html">Home</a>
+      <a href="Produtos_Page.html" class="painel-activo">Produtos</a>
+      <a href="contactopage.html">Contáctanos</a>
+      <a href="loginpage.html">Login</a>
+      <a href="register.html">Sign up</a>
+    </nav>
+    <div class="usuario">
+        <div class="perfil">
+            <span>Sandro Cárdenas</span>
+            <img src="https://media-gru1-2.cdn.whatsapp.net/v/t61.24694-24/491843294_975722848050221_2955177658108755676_n.jpg?ccb=11-4&oh=01_Q5Aa1QGcaOZgOn6xj9EuZZmFsZ6GttF8FtWEdXSN6iNOKeX53w&oe=68268933&_nc_sid=5e03e0&_nc_cat=111">
+        </div>
+    </div>
+  </header>
+
+  <!-- Barra de busca -->
+  <section class="busca">
+    <input type="text" placeholder="Buscar produtos...">
+    <button><img src="https://st3.depositphotos.com/1507819/32085/v/450/depositphotos_320853210-stock-illustration-magnifier-vector-icon-on-black.jpg" alt="Buscar"></button>
+    <div>
+      <ul>
+        <li class="submenu">
+          <a href="../pages/carrito_compras.html">
+            <img id="img-carrito" src="../imagenes/car.svg" alt="Carrinho">
+          </a>
+        </li>
+      </ul>      
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <section class="categorias">
+    <h2>Categorias</h2>
+    <div class="grid-categorias">
+  
+      <div class="categoria-card">
+        <a href="#section_frutas">
+            <img src="https://acortar.link/iePJJE" alt="Frutas">
+            <h3>Frutas</h3>
+            <p>2 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_vegetais">
+          <img src="https://acortar.link/bo4J2Z" alt="Vegetais">
+          <h3>Vegetais</h3>
+          <p>2 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_carne">
+          <img src="https://acortar.link/kmatg1" alt="Carnes">
+          <h3>Carnes</h3>
+          <p>3 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_lanches">
+          <img src="https://acortar.link/pUABwP" alt="Lanches">
+          <h3>Lanches</h3>
+          <p>1 item</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_congelados">
+          <img src="https://acortar.link/LR2FQe" alt="Congelados">
+          <h3>Congelados</h3>
+          <p>2 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_enlatados">
+          <img src="https://acortar.link/vIfaNY" alt="Enlatados">
+          <h3>Enlatados</h3>
+          <p>2 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_lactinios">
+          <img src="https://acortar.link/uW4VLg" alt="Laticínios">
+          <h3>Laticínios</h3>
+          <p>1 item</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_bebidas">
+          <img src="https://acortar.link/dguDLI" alt="Bebidas">
+          <h3>Bebidas</h3>
+          <p>3 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_padaria">
+          <img src="https://acortar.link/hyvQQJ" alt="Padaria">
+          <h3>Padaria</h3>
+          <p>3 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_cereais">
+          <img src="https://acortar.link/3IAjfu" alt="Cereais">
+          <h3>Cereais</h3>
+          <p>2 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_legumes">
+          <img src="https://acortar.link/ze2Chr" alt="Salgadinhos">
+          <h3>Legumes</h3>
+          <p>8 itens</p>
+        </a>
+      </div>
+  
+      <div class="categoria-card">
+        <a href="#section_doces">
+          <img src="https://acortar.link/xUqBTu" alt="Doces">
+          <h3>Doces</h3>
+          <p>3 itens</p>
+        </a>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- Produtos mais vendidos -->
+  <section class="mais-vendidos">
+    <h2>Produtos mais vendidos</h2>
+    <div class="grid-produtos">
+      <div class="produto-card destaque">
+        <img src="https://shorturl.at/G7Lh3" alt="Manga">
+        <h3>Manga</h3>
+        <p>Fresco e natural</p>
+        <p class="preco">R$ 3,99</p>
+        <button>Adicionar</button>
+      </div>
+      <div class="produto-card destaque">
+        <img src="https://shorturl.at/HEeT8" alt="Abacaxi">
+        <h3>Abacaxi</h3>
+        <p>Colheita recente</p>
+        <p class="preco">R$ 3,99</p>
+        <button>Adicionar</button>
+      </div>
+      <div class="produto-card destaque">
+        <img src="https://shorturl.at/iu415" alt="Carne_Moida">
+        <h3>Carne Moida</h3>
+        <p>Carde de calidade</p>
+        <p class="preco">R$ 19,99</p>
+        <button>Adicionar</button>
+      </div>
+      <!-- Mais produtos -->
+    </div>
+  </section>
+
+
+    <!-- Frutas -->
+  <section class="secao-produtos">
+    <h2 id="section_frutas">Frutas</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/CKxutN" alt="Banana Prata">
+        <h3>Banana Prata</h3>
+        <p>Fresca e nutritiva</p>
+        <p class="preco">R$ 6,99</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/1mUT24" alt="Maçã Fuji">
+        <h3>Maçã Fuji</h3>
+        <p>Suculenta e doce</p>
+        <p class="preco">R$ 5,89</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/Kdmmqp" alt="Laranja Pêra">
+        <h3>Laranja Pêra</h3>
+        <p>Refrescante e cítrica</p>
+        <p class="preco">R$ 4,79</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://coobrasil.com.br/storage/uploads/t2pUJAuxSq2tjQbJ20jToNbVl9BplF8D2UHl6RaM.jpg" alt="Uva Roxa">
+        <h3>Uva Roxa</h3>
+        <p>Sem sementes</p>
+        <p class="preco">R$ 9,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/aaT76d" alt="Manga Palmer">
+        <h3>Manga Palmer</h3>
+        <p>Doce e carnuda</p>
+        <p class="preco">R$ 7,20</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Vegetais -->
+  <section class="secao-produtos">
+    <h2 id="section_vegetais">Vegetais</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://cdn.dooca.store/1452/products/alface-crespa.jpg?v=1600897961&webp=0" alt="Alface Crespa">
+        <h3>Alface Crespa</h3>
+        <p>Orgânico</p>
+        <p class="preco">R$ 3,99</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://goo.su/EYVeF" alt="Cenoura">
+        <h3>Cenoura</h3>
+        <p>Fonte de vitamina A</p>
+        <p class="preco">R$ 4,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia28605/plantio-de-brocolis-cursos-cpt.jpg" alt="Brócolis">
+        <h3>Brócolis</h3>
+        <p>Rico em fibras</p>
+        <p class="preco">R$ 5,20</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/LCWkfD" alt="Tomate Italiano">
+        <h3>Tomate Italiano</h3>
+        <p>Ideal para saladas</p>
+        <p class="preco">R$ 6,10</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/ttUJhQ" alt="Pepino Japonês">
+        <h3>Pepino Japonês</h3>
+        <p>Refrescante</p>
+        <p class="preco">R$ 3,30</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Carnes -->
+  <section class="secao-produtos">
+    <h2 id="section_carne">Carnes</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acouguedonilo.com.br/wp-content/uploads/2022/08/alcatra-bovina-3-430x430.jpg" alt="Carne Bovina">
+        <h3>Carne Bovina</h3>
+        <p>Corte nobre</p>
+        <p class="preco">R$ 29,99</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://www.svicente.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dw0faaf505/Produtos/20311-0000000002031-peito%20de%20frango%20com%20pele%20e%20osso%20bandeja-acougue-1.jpg" alt="Peito de Frango">
+        <h3>Peito de Frango</h3>
+        <p>Sem osso</p>
+        <p class="preco">R$ 18,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/mQjbdE" alt="Linguiça Toscana">
+        <h3>Linguiça Toscana</h3>
+        <p>Temperada</p>
+        <p class="preco">R$ 15,80</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://superprix.vteximg.com.br/arquivos/ids/195050-600-600/38180.jpg?v=637497988331870000" alt="Bisteca Suína">
+        <h3>Bisteca Suína</h3>
+        <p>Com osso</p>
+        <p class="preco">R$ 22,10</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/nt6XLI" alt="Filé Mignon">
+        <h3>Filé Mignon</h3>
+        <p>Premium</p>
+        <p class="preco">R$ 39,90</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Lanches -->
+  <section class="secao-produtos">
+    <h2 id="section_lanches">Lanches</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/785WyJ" alt="Sanduíche Natural">
+        <h3>Sanduíche Natural</h3>
+        <p>Pronto para consumo</p>
+        <p class="preco">R$ 8,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://media.istockphoto.com/id/1127711790/pt/foto/tortilla-wrap-with-fried-chicken-meat-and-vegetables.jpg?s=612x612&w=0&k=20&c=gU_zZcseAQbByJ1pVncfEPYv1emRRV8tmk1AUOyIfTM=" alt="Wrap de Frango">
+        <h3>Wrap de Frango</h3>
+        <p>Com alface e tomate</p>
+        <p class="preco">R$ 9,90</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/yMONRw" alt="Pão de Queijo">
+        <h3>Pão de Queijo</h3>
+        <p>Pacote 300g</p>
+        <p class="preco">R$ 7,25</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://img.freepik.com/fotos-premium/sanduiche-de-queijo-e-pao-de-ovos-misto-quente-em-mesa-de-madeira-transparente-conjunto-rustico-fino_266402-1472.jpg" alt="Misto Quente">
+        <h3>Misto Quente</h3>
+        <p>Presunto e queijo</p>
+        <p class="preco">R$ 6,80</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://img.freepik.com/fotos-premium/hamburguer-caseiro-em-fundo-branco-hamburguer-com-sementes-de-gergelim-e-bacon-verduras-e-queijo_95411-613.jpg" alt="Hambúrguer Caseiro">
+        <h3>Hambúrguer Caseiro</h3>
+        <p>Grelhado</p>
+        <p class="preco">R$ 10,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Congelados-->
+  <section class="secao-produtos">
+    <h2 id="section_congelados">Congelados</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/ek3qPc" alt="Pizza Calabresa">
+        <h3>Pizza Calabresa</h3>
+        <p>Pronta em 10 minutos</p>
+        <p class="preco">R$ 12,90</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/GnjjCV" alt="Lasanha Bolonhesa">
+        <h3>Lasanha Bolonhesa</h3>
+        <p>Congelada</p>
+        <p class="preco">R$ 14,99</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/m1uycs" alt="Nuggets de Frango">
+        <h3>Nuggets de Frango</h3>
+        <p>Crocrante</p>
+        <p class="preco">R$ 11,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/6dSdL8" alt="Batata Frita">
+        <h3>Batata Frita</h3>
+        <p>Pré-cozida</p>
+        <p class="preco">R$ 9,80</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/vmsmRM" alt="Panqueca de Carne">
+        <h3>Panqueca de Carne</h3>
+        <p>Pronta</p>
+        <p class="preco">R$ 13,40</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Enlatados -->
+  <section class="secao-produtos">
+    <h2 id="section_enlatados">Enlatados</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/hBG1CP" alt="Atum em Óleo">
+        <h3>Atum em Óleo</h3>
+        <p>Fonte de proteína</p>
+        <p class="preco">R$ 5,40</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/m4wWJ3" alt="Milho Verde">
+        <h3>Milho Verde</h3>
+        <p>Doce e crocante</p>
+        <p class="preco">R$ 3,99</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/m9c8xp" alt="Ervilha">
+        <h3>Ervilha</h3>
+        <p>Natural</p>
+        <p class="preco">R$ 4,20</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/mlI9CH" alt="Molho de Tomate">
+        <h3>Molho de Tomate</h3>
+        <p>Tradicional</p>
+        <p class="preco">R$ 2,89</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/BtVsoA" alt="Sardinha">
+        <h3>Sardinha</h3>
+        <p>Em óleo</p>
+        <p class="preco">R$ 6,70</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section> 
+  <!-- Lactínios -->
+  <section class="secao-produtos">
+    <h2 id="section_lactinios">Lactínios</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/KRXv3k" alt="Leite Integral">
+        <h3>Leite Integral</h3>
+        <p>1 litro</p>
+        <p class="preco">R$ 4,29</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/3JT0zj" alt="Queijo Mussarela">
+        <h3>Queijo Mussarela</h3>
+        <p>Fatiado</p>
+        <p class="preco">R$ 7,90</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/d0ICBm" alt="Iogurte Natural">
+        <h3>Iogurte Natural</h3>
+        <p>Sem açúcar</p>
+        <p class="preco">R$ 3,75</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/yoigqS" alt="Manteiga">
+        <h3>Manteiga</h3>
+        <p>Com sal</p>
+        <p class="preco">R$ 6,80</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/7ip7Xq" alt="Creme de Leite">
+        <h3>Creme de Leite</h3>
+        <p>Caixa</p>
+        <p class="preco">R$ 2,99</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Bebidas  -->
+  <section class="secao-produtos">
+    <h2 id="section_bebidas">Bebidas</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/VkSa9A" alt="Suco de Laranja">
+        <h3>Suco de Laranja</h3>
+        <p>Sem conservantes</p>
+        <p class="preco">R$ 6,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://superprix.vteximg.com.br/arquivos/ids/226373-600-600/img_1200_1%20-1-.png.png?v=638774026492600000" alt="Refrigerante Cola">
+        <h3>Refrigerante Cola</h3>
+        <p>2L</p>
+        <p class="preco">R$ 7,30</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/uQApRI" alt="Água Mineral">
+        <h3>Água Mineral</h3>
+        <p>Sem gás</p>
+        <p class="preco">R$ 1,80</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/ZFQBjH" alt="Chá Gelado">
+        <h3>Chá Gelado</h3>
+        <p>Limão</p>
+        <p class="preco">R$ 3,25</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/iBF6DT" alt="Isotônico">
+        <h3>Isotônico</h3>
+        <p>Laranja</p>
+        <p class="preco">R$ 4,60</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Padaria -->
+  <section class="secao-produtos">
+    <h2 id="section_padaria">Padaria</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://cdn.2rscms.com.br/imgcache/5054/uploads/5054/layout/Linha%20Gold%20Paes/pao-frances-12h.png.webp" alt="Pão Francês">
+        <h3>Pão Francês</h3>
+        <p>Pacote com 6 unid.</p>
+        <p class="preco">R$ 5,00</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://panutti.com.br/arquivos/produtos/imagens_adicionais/P%C3%A3o%20Forma%20Leite_a%20(1)-159.jpg" alt="Pão de Forma">
+        <h3>Pão de Forma</h3>
+        <p>Integral</p>
+        <p class="preco">R$ 6,20</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/9Yf37N" alt="Croissant">
+        <h3>Croissant</h3>
+        <p>Recheado</p>
+        <p class="preco">R$ 4,75</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/ONkucN" alt="Bolo de Cenoura">
+        <h3>Bolo de Cenoura</h3>
+        <p>Fatiado</p>
+        <p class="preco">R$ 5,90</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/PWvwPg" alt="Rosquinha Doce">
+        <h3>Rosquinha Doce</h3>
+        <p>300g</p>
+        <p class="preco">R$ 3,40</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Cereias -->
+  <section class="secao-produtos">
+    <h2 id="section_cereias">Cereais</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/q1Tzpf" alt="Cereal Matinal">
+        <h3>Cereal Matinal</h3>
+        <p>Com mel</p>
+        <p class="preco">R$ 9,90</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/9ZyODV" alt="Aveia em Flocos">
+        <h3>Aveia em Flocos</h3>
+        <p>Integral</p>
+        <p class="preco">R$ 4,99</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/WNjZY2" alt="Granola">
+        <h3>Granola</h3>
+        <p>Tradicional</p>
+        <p class="preco">R$ 7,20</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/44KiAR" alt="Farelo de Trigo">
+        <h3>Farelo de Trigo</h3>
+        <p>500g</p>
+        <p class="preco">R$ 3,80</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/ZRduah" alt="Linhaça Dourada">
+        <h3>Linhaça Dourada</h3>
+        <p>Rica em fibras</p>
+        <p class="preco">R$ 6,40</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Nozes e Legumes -->
+  <section class="secao-produtos">
+    <h2 id="section_legumes">Nozes e Legumes</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/aQ4IHj" alt="Nozes Chilenas">
+        <h3>Nozes Chilenas</h3>
+        <p>Granel 500g</p>
+        <p class="preco">R$ 14,90</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/sK30gw" alt="Castanha do Pará">
+        <h3>Castanha do Pará</h3>
+        <p>Inteiras</p>
+        <p class="preco">R$ 19,99</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://images.tcdn.com.br/img/img_prod/1048598/amendoa_s_casca_100g_10555_1_97540fa358ab91363fcd17c174c04769.png" alt="Amêndoas">
+        <h3>Amêndoas</h3>
+        <p>Sem sal</p>
+        <p class="preco">R$ 17,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/LGpqaz" alt="Amendoim Torrado">
+        <h3>Amendoim Torrado</h3>
+        <p>Com casca</p>
+        <p class="preco">R$ 6,90</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/KTgTPv" alt="Pistache">
+        <h3>Pistache</h3>
+        <p>Importado</p>
+        <p class="preco">R$ 22,30</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  <!-- Doces -->
+  <section class="secao-produtos">
+    <h2 id="section_doces">Doces</h2>
+    <div class="grid-produtos">
+      <div class="produto-card">
+        <img src="https://acortar.link/i1lDjA" alt="Chocolate ao Leite">
+        <h3>Chocolate ao Leite</h3>
+        <p>Barra 90g</p>
+        <p class="preco">R$ 4,50</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://acortar.link/NJLkW6" alt="Bala de Goma">
+        <h3>Bala de Goma</h3>
+        <p>Sortidas</p>
+        <p class="preco">R$ 3,70</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://io.convertiez.com.br/m/drogaven/shop/products/images/325/large/biscoito-recheado-passatempo-chocolate-pacote-com-130g_6957.jpg" alt="Biscoito Recheado">
+        <h3>Biscoito Recheado</h3>
+        <p>Chocolate</p>
+        <p class="preco">R$ 2,89</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://mercantilnovaera.vtexassets.com/arquivos/ids/200828/Doce-de-Leite-Tradicional-ITALAC-Pote-400g.jpg?v=637958459807230000" alt="Doce de Leite">
+        <h3>Doce de Leite</h3>
+        <p>Pote 400g</p>
+        <p class="preco">R$ 6,40</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://st3.depositphotos.com/8857146/14730/i/450/depositphotos_147309937-stock-photo-pe-de-moleque-and-peanut.jpg" alt="Paçoca">
+        <h3>Paçoca</h3>
+        <p>Pacote 10 unid.</p>
+        <p class="preco">R$ 4,10</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Rodapé -->
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <!-- Logo o imagen -->
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="../imagenes/cesta_footer.png" alt="Logo de Nest Supermarkt">
+                </a>
+            </figure>
+        </div>
+
+        <!-- Sobre nosotros -->
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Somos Nest Supermarkt, tu tienda de confianza para productos frescos, locales y saludables.</p>
+            <p>Entregamos con responsabilidad y compromiso. ¡Gracias por elegirnos!</p>
+        </div>
+
+        <!-- Contacto -->
+        <div class="box">
+            <h2>CONTACTO</h2>
+            <p><i class="fas fa-envelope"></i> contacto@nest.com</p>
+            <p><i class="fas fa-phone"></i> +55 11 99999-9999</p>
+            <p><i class="fas fa-map-marker-alt"></i> Rua das Hortas, São Paulo – SP</p>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="box">
+            <h2>SÍGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Parte inferior legal -->
+    <div class="grupo-2">
+        <small>© 2025 <strong>Nest Supermarkt</strong> – Todos los derechos reservados.</small>
+    </div>
+</footer>
+
+</body>
+</html>
