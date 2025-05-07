@@ -90,7 +90,7 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
 
 Abaixo está o diagrama representando as rotas entre as principais páginas do sistema:
 
-![Registro](Milestone_1/Diagrama_navegacion/navegation_diagram.jpg)
+![Nagacion](Milestone_1/navegation_diagram/navegation_diagram.jpg)
 
 ---
 
