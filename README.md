@@ -1,4 +1,4 @@
-# 📄 Relatório de Projeto – Milestone 1: Mockups da Loja Online
+# 📄 Relatório de Projeto – Milestone 1: mockups da Loja Online
 
 ## 1. Identificação do Grupo
 
@@ -53,13 +53,13 @@ As seguintes páginas foram desenvolvidas com HTML5 e CSS3:
 #### 🖼️ Capturas das Telas HTML Implementadas
 
 - **Home Page**  
-  ![Home Page](Milestone_1/Mockups/Home_Page.png)
+  ![Home Page](Milestone_1/mockups/Home_Page.png)
 
 - **Página de Login**  
-  ![Login Page](Milestone_1/Mockups/Log_In.png)
+  ![Login Page](Milestone_1/mockups/Log_In.png)
 
 - **Página de Contato**  
-  ![Contato Page](Milestone_1/Mockups/Contáctanos.png)
+  ![Contato Page](Milestone_1/mockups/Contáctanos.png)
 
 ### 3.2. Telas Criadas em Mockup (Figma)
 
@@ -70,19 +70,19 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
 - Página de carrinho de compras
 - Página de registro de usuário
 
-#### 🖼️ Mockups (Figma)
+#### 🖼️ mockups (Figma)
 
 - **Catálogo de Produtos**  
-  ![Catálogo](Milestone_1/Mockups/productspage.png)
+  ![Catálogo](Milestone_1/mockups/productspage.png)
 
 - **Detalhes do produto**
-  ![Detalhes](Milestone_1/Mockups/Sobreo_o_Producto.png)
+  ![Detalhes](Milestone_1/mockups/Sobreo_o_Producto.png)
 
 - **Carrinho de compras**
-  ![Carrinho](Milestone_1/Mockups/Carrito_de_Compras.png)
+  ![Carrinho](Milestone_1/mockups/Carrito_de_Compras.png)
 
 - **Registro de usuário**
-  ![Registro](Milestone_1/Mockups/Register_de_Usuarios.png)
+  ![Registro](Milestone_1/mockups/Register_de_Usuarios.png)
 
 ---
 
@@ -163,7 +163,7 @@ Abaixo está o diagrama representando as rotas entre as principais páginas do s
 
 - `homepage.html`, `loginpage.html`, `contactopage.html`
 - `styleshomepage.css`, `stylesloginpage.css`, `stylescontactopage.css`
-- **Mockups exportados do Figma:** armazenados na pasta `/img`
+- **mockups exportados do Figma:** armazenados na pasta `/img`
 - **Diagrama de navegação:** `./img/navegation_diagram.png`
 - `README.md` contendo este relatório completo
 
