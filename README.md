@@ -383,7 +383,13 @@ Todos os testes foram executados com sucesso. As funcionalidades estão operacio
 
 - Navegador moderno (recomenda-se Google Chrome).
 
-### 7.2. Execução
+### 7.2. ADMINISTRADOR PADRÃO
+- Quando você inicia o projeto pela primeira vez e deseja acessar as páginas do administrador, já existe uma conta padrão com o atributo de administrador:
+```bash
+    email: nest@empresa.com
+    password: admin123
+```
+### 7.3. Execução
 
 1. Clonar o repositório:
    ```bash
