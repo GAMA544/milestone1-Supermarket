@@ -167,3 +167,151 @@ Abaixo está o diagrama representando as rotas entre as principais páginas do s
 - **Diagrama de navegação:** `./img/navegation_diagram.png`
 - `README.md` contendo este relatório completo
 
+# 📄 Relatório de Projeto – Milestone 2: funcionalidades do cliente
+
+## 1. Identificação do Grupo
+
+- **Ari Manuel Gamboa Aguilar** – USP nº 16796572  
+- **Luis Enrique Asuncion Velasquez** – USP nº 16796593  
+- **Sandro Fabrizio Cárdenas Vilca** – USP nº 16796589  
+
+---
+
+## 2. Requisitos Atualizados
+
+### 2.1. Requisitos Funcionais (Atualizados)
+
+O sistema cumpre os requisitos básicos do Milestone 1 e agora implementa as seguintes funcionalidades adicionais no Milestone 2:
+
+- **Login inteligente com redirecionamento automático**:
+  - Admins são redirecionados para o painel de administração.
+  - Clientes são redirecionados à página de catálogo.
+
+- **CRUD completo e funcional para administradores**:
+  - **Adicionar, editar e excluir produtos**.
+  - **Cadastrar novos administradores e editar usuários existentes**.
+
+- **Formulários inteligentes**:
+  - Máscaras automáticas para CPF, telefone e e-mail.
+  - Validação de campos obrigatórios.
+
+- **Carrinho de compras interativo e dinâmico**:
+  - Adição e remoção de produtos em tempo real.
+  - Atualização automática da quantidade, preço unitário e total da compra.
+
+- **Resumo do pedido em tempo real**:
+  - Quantidade de itens e valor total visível dinamicamente.
+
+- **Geração de comprovante de compra em PDF**:
+  - Ao finalizar a compra, o sistema gera uma **boleta de pagamento** com os dados do pedido.
+  - O botão "Imprimir boleta" chama `window.print()`.
+
+- **Envio de mensagens via “Contate-nos”**:
+  - Os dados são enviados via `mailto:` para `supermarketnest9@gmail.com`.
+
+- **Filtro por categoria**:
+  - Os produtos podem ser filtrados por categoria no catálogo (`frutas`, `bebidas`, etc.).
+
+- **Renderização automática do catálogo de produtos**:
+  - Produtos armazenados no `localStorage` são carregados e renderizados dinamicamente.
+
+- **Página de detalhes do produto individual**:
+  - Cada produto possui uma página dedicada (`Produto_Individual.html`) com descrição detalhada, imagem ampliada e botão de compra.
+
+- **Função de “Produtos mais vendidos”**:
+  - Destaque de produtos com maior valor de `quantidade_vendida`, estático por ora.
+
+- **Persistência local de dados**:
+  - Todo o sistema simula um backend completo usando `localStorage`.
+
+- **Sessão do usuário logado**:
+  - Nome do usuário é exibido dinamicamente na interface.
+  - A sessão é mantida entre páginas (controle por `localStorage`).
+
+- **Separação visual de áreas do sistema**:
+  - Navegação clara entre seções: cliente, administrador, carrinho, contato e produtos.
+
+- **Estilo responsivo com CSS modularizado**:
+  - Uso de media queries e CSS limpo.
+  - Compatível com diferentes tamanhos de tela.
+
+---
+
+## 3. Descrição do Projeto (Implementação)
+
+### 3.1. Telas Funcionais
+
+- `homepage.html`: Página de entrada do sistema.
+- `loginpage.html`: Login com distinção de perfis.
+- `register.html`: Registro de novos usuários.
+- `Produtos_Page.html`: Catálogo com filtro por categoria.
+- `Produto_Individual.html`: Detalhes e compra de um produto.
+- `carrito_compras.html`: Carrinho interativo.
+- `pagamento.html`: Página de pagamento e emissão de boleta.
+- `usuario.html`: Dados do cliente logado.
+- `contactopage.html`: Formulário de contato.
+
+### 3.2. Área Administrativa
+
+- `admin-productos.html`: Lista e controle dos produtos cadastrados.
+- `admin-usuarios.html`: Visualização de todos os usuários e admins.
+- `admin-add-product.html`, `admin-edit-product.html`: CRUD de produtos.
+- `admin-add-admin.html`, `admin-edit-user.html`: Gerenciamento de admins.
+
+---
+
+## 4. Comentários sobre o Código
+
+- Scripts JavaScript organizados por responsabilidade funcional.
+- Separação entre lógica de renderização e manipulação de dados.
+- Uso consistente de `localStorage` como repositório de dados.
+- Scripts como `renderAdminUsers.js`, `renderizarCarrinho.js`, `contatanos.js` e `user_info.js` fornecem modularidade e reusabilidade.
+
+---
+
+## 5. Plano de Testes
+
+**Testes manuais realizados:**
+
+- Login e redirecionamento de usuários.
+- Renderização de produtos e filtro por categoria.
+- Manipulação completa do carrinho.
+- Geração de boleta em PDF com produtos corretos.
+- CRUD de produtos e usuários.
+- Teste de envio de mensagens pelo formulário de contato.
+- Máscaras aplicadas corretamente nos campos dos formulários.
+
+---
+
+## 6. Resultados dos Testes
+
+Todos os testes foram executados com sucesso. As funcionalidades estão operacionais com resultados consistentes. Nenhum bug crítico foi identificado.
+
+| Funcionalidade                         | Status |
+|----------------------------------------|--------|
+| Login de cliente/admin                 | ✅     |
+| Redirecionamento por tipo de usuário   | ✅     |
+| Carrinho com total dinâmico            | ✅     |
+| CRUD de produtos e usuários            | ✅     |
+| Geração de boleta                      | ✅     |
+| Formulário “Contate-nos”               | ✅     |
+| Máscara de CPF/telefone                | ✅     |
+| Sessão e nome do usuário logado        | ✅     |
+| Filtro por categoria                   | ✅     |
+| SPA parcial com navegação              | ✅     |
+
+---
+
+## 7. Procedimentos de Execução
+
+### 7.1. Requisitos
+
+- Navegador moderno (recomenda-se Google Chrome).
+
+### 7.2. Execução
+
+1. Clonar o repositório:
+   ```bash
+   git clone https://github.com/GAMA544/milestone1-Supermarket.git
+
+
