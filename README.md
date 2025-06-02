@@ -179,61 +179,118 @@ Abaixo está o diagrama representando as rotas entre as principais páginas do s
 
 ## 2. Requisitos Atualizados
 
-### 2.1. Requisitos Funcionais (Atualizados)
+### 2.1. Requisitos Funcionais
 
-O sistema cumpre os requisitos básicos do Milestone 1 e agora implementa as seguintes funcionalidades adicionais no Milestone 2:
+O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Milestone 2, passou a implementar as seguintes funcionalidades:
 
-- **Login inteligente com redirecionamento automático**:
-  - Admins são redirecionados para o painel de administração.
-  - Clientes são redirecionados à página de catálogo.
+#### 🔐 Funcionalidades Gerais de Acesso e Sessão
 
-- **CRUD completo e funcional para administradores**:
-  - **Adicionar, editar e excluir produtos**.
-  - **Cadastrar novos administradores e editar usuários existentes**.
+- **Login com diferenciação de perfis**:
+  - O sistema reconhece o tipo de usuário após o login.
+  - **Clientes** são redirecionados para a página de catálogo.
+    ![Page Produtos](Milestone_2/mockups/Home_Page.png)
+  - **Administradores** são redirecionados para o painel administrativo.
+    ![Page Produtos](Milestone_2/mockups/Home_Page.png)
 
-- **Formulários inteligentes**:
-  - Máscaras automáticas para CPF, telefone e e-mail.
-  - Validação de campos obrigatórios.
+- **Persistência da sessão com `localStorage`**:
+  - A sessão do usuário permanece ativa entre páginas.
+  - O nome do usuário logado é exibido dinamicamente no cabeçalho.
 
-- **Carrinho de compras interativo e dinâmico**:
+- **Formulários com validações e máscaras**:
+  - Aplicação de máscaras automáticas para CPF e número de telefone.
+  - Campos obrigatórios como nome, email e senha são validados no cliente.
+
+---
+
+#### 🛒 Funcionalidades do Cliente
+
+- **Visualização de produtos por categoria**:
+  - Catálogo dinâmico com filtro por categorias como "Frutas", "Bebidas", etc.
+
+- **Renderização automática dos produtos**:
+  - Os produtos são carregados a partir do `localStorage` e exibidos dinamicamente na página `Produtos_Page.html`.
+
+- **Página de produto individual (`Produto_Individual.html`)**:
+  - Exibe imagem, descrição e informações detalhadas do produto.
+  - Possui botão para adicionar diretamente ao carrinho.
+
+- **Carrinho de compras dinâmico (`carrito_compras.html`)**:
   - Adição e remoção de produtos em tempo real.
-  - Atualização automática da quantidade, preço unitário e total da compra.
+  - Atualização automática de quantidades e preços.
+  - Itens persistem entre sessões via `localStorage`.
 
-- **Resumo do pedido em tempo real**:
-  - Quantidade de itens e valor total visível dinamicamente.
+- **Resumo da compra**:
+  - Quantidade total de itens e valor final visíveis e atualizados dinamicamente.
 
-- **Geração de comprovante de compra em PDF**:
-  - Ao finalizar a compra, o sistema gera uma **boleta de pagamento** com os dados do pedido.
-  - O botão "Imprimir boleta" chama `window.print()`.
+- **Finalização da compra e geração de comprovante**:
+  - Página `pagamento.html` simula o pagamento com qualquer número de cartão.
+  - Gera uma **boleta de compra** em PDF via `window.print()`, contendo:
+    - Nome do comprador, produtos adquiridos, preços e total.
 
-- **Envio de mensagens via “Contate-nos”**:
-  - Os dados são enviados via `mailto:` para `supermarketnest9@gmail.com`.
+- **Página de perfil do cliente (`usuario.html`)**:
+  - Permite ao cliente visualizar e editar seus dados pessoais.
 
-- **Filtro por categoria**:
-  - Os produtos podem ser filtrados por categoria no catálogo (`frutas`, `bebidas`, etc.).
+- **Formulário funcional de contato**:
+  - A página `contactopage.html` permite que clientes enviem sugestões e dúvidas.
+  - As mensagens são redirecionadas para `supermarketnest9@gmail.com` via `mailto:`.
+  - E suas avaliações são enviadas para o endereço de e-mail que criamos para a empresa.
+    
+- **Finalização da compra e geração de comprovante**:
+  - A página `pagamento.html` permite ao cliente revisar os dados do pedido e confirmar a compra.
+  - Ao clicar em "Finalizar Compra", é exibido um resumo completo com:
+    - Nome do usuário.
+    - Lista de produtos comprados (nome, quantidade e valor unitário).
+    - Valor total da compra.
+    - Data/hora do pedido.
+  - O documento gerado é estruturado para ser impresso ou salvo como PDF, servindo como recibo oficial da compra.
+  - Todos os dados são renderizados dinamicamente com base no conteúdo do `localStorage` e no estado do carrinho.
+- **Função para logout sua conta de usuário**:
+  - Há uma função para fazer o logout do usuário quando você clica no nome do usuário.
+    
+---
 
-- **Renderização automática do catálogo de produtos**:
-  - Produtos armazenados no `localStorage` são carregados e renderizados dinamicamente.
+#### 🛠️ Funcionalidades do Administrador
 
-- **Página de detalhes do produto individual**:
-  - Cada produto possui uma página dedicada (`Produto_Individual.html`) com descrição detalhada, imagem ampliada e botão de compra.
+- **Área administrativa exclusiva**:
+  - Administradores autenticados acessam uma interface própria com menu de navegação exclusivo.
+  - E tem uma seção especial para retornar à página de comando do administrador.
 
-- **Função de “Produtos mais vendidos”**:
-  - Destaque de produtos com maior valor de `quantidade_vendida`, estático por ora.
+- **CRUD de produtos**:
+  - Visualizar todos os produtos existentes.
+  - Adicionar novos produtos com imagem, descrição, preço e estoque.
+  - Editar produtos cadastrados.
+  - Excluir produtos do sistema.
 
-- **Persistência local de dados**:
-  - Todo o sistema simula um backend completo usando `localStorage`.
+- **CRUD de usuários**:
+  - Visualizar a lista completa de clientes e administradores.
+  - Editar dados dos usuários registrados.
 
-- **Sessão do usuário logado**:
-  - Nome do usuário é exibido dinamicamente na interface.
-  - A sessão é mantida entre páginas (controle por `localStorage`).
+- **Cadastro de novos administradores**:
+  - Através da interface `admin-add-admin.html`.
 
-- **Separação visual de áreas do sistema**:
-  - Navegação clara entre seções: cliente, administrador, carrinho, contato e produtos.
+- **Validações administrativas**:
+  - Formulários com máscara para CPF e validação de número de telefone e email.
 
-- **Estilo responsivo com CSS modularizado**:
-  - Uso de media queries e CSS limpo.
-  - Compatível com diferentes tamanhos de tela.
+- **Design consistente e responsivo**:
+  - Todas as páginas administrativas seguem padrão visual coeso, com navegação clara e estilo moderno.
+  - Responsividade garantida via CSS modular.
+
+---
+
+#### 💡 Funcionalidades Técnicas Adicionais
+
+- **SPA parcial**:
+  - A navegação entre páginas simula uma Single-Page Application.
+  - O carregamento é fluido e controlado por `localStorage`.
+
+- **Responsividade e acessibilidade**:
+  - Uso de `media queries` e boas práticas de HTML5/CSS3.
+  - Compatível com dispositivos móveis e navegadores modernos.
+
+- **Modularidade e escalabilidade**:
+  - Scripts organizados por função (`login.js`, `renderizarCarrinho.js`, `pagamento.js`, etc.).
+  - Estrutura pronta para futura integração com backend real.
+
 
 ---
 
@@ -241,23 +298,28 @@ O sistema cumpre os requisitos básicos do Milestone 1 e agora implementa as seg
 
 ### 3.1. Telas Funcionais
 
-- `homepage.html`: Página de entrada do sistema.
-- `loginpage.html`: Login com distinção de perfis.
-- `register.html`: Registro de novos usuários.
-- `Produtos_Page.html`: Catálogo com filtro por categoria.
-- `Produto_Individual.html`: Detalhes e compra de um produto.
-- `carrito_compras.html`: Carrinho interativo.
-- `pagamento.html`: Página de pagamento e emissão de boleta.
-- `usuario.html`: Dados do cliente logado.
-- `contactopage.html`: Formulário de contato.
+| Página                      | Descrição                                                                 |
+|----------------------------|---------------------------------------------------------------------------|
+| `homepage.html`            | Tela inicial com apresentação da loja e acesso a login                    |
+| `loginpage.html`           | Autenticação de usuários com redirecionamento por perfil                  |
+| `register.html`            | Formulário de registro com máscaras e validações                         |
+| `Produtos_Page.html`       | Catálogo de produtos com filtro por categoria                            |
+| `Produto_Individual.html`  | Página de detalhes de produto com botão de compra                         |
+| `carrito_compras.html`     | Carrinho de compras interativo com resumo                                |
+| `pagamento.html`           | Finalização do pedido e geração da boleta em PDF                         |
+| `usuario.html`             | Visualização e edição do perfil do cliente                               |
+| `contactopage.html`        | Formulário de contato funcional                                          |
 
-### 3.2. Área Administrativa
+### 3.2. Telas Administrativas
 
-- `admin-productos.html`: Lista e controle dos produtos cadastrados.
-- `admin-usuarios.html`: Visualização de todos os usuários e admins.
-- `admin-add-product.html`, `admin-edit-product.html`: CRUD de produtos.
-- `admin-add-admin.html`, `admin-edit-user.html`: Gerenciamento de admins.
-
+| Página                      | Função                                                                 |
+|----------------------------|------------------------------------------------------------------------|
+| `admin-productos.html`     | Listagem e gerenciamento de produtos                                   |
+| `admin-add-product.html`   | Cadastro de novo produto                                               |
+| `admin-edit-product.html`  | Edição de produto existente                                            |
+| `admin-usuarios.html`      | Lista de clientes e admins registrados                                |
+| `admin-add-admin.html`     | Cadastro de novo administrador                                         |
+| `admin-edit-user.html`     | Edição de dados de um usuário  
 ---
 
 ## 4. Comentários sobre o Código
