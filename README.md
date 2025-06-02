@@ -167,7 +167,7 @@ Abaixo está o diagrama representando as rotas entre as principais páginas do s
 - **Diagrama de navegação:** `./img/navegation_diagram.png`
 - `README.md` contendo este relatório completo
 
-# 📄 Relatório de Projeto – Milestone 2: funcionalidades do cliente
+# 📄 Relatório de Projeto – Milestone 2: funcionalidades do cliente e Administrador
 
 ## 1. Identificação do Grupo
 
