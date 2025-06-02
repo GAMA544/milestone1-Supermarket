@@ -53,7 +53,7 @@ As seguintes páginas foram desenvolvidas com HTML5 e CSS3:
 #### 🖼️ Capturas das Telas HTML Implementadas
 
 - **Home Page**  
-  ![Home Page](Milestone_1/mockups/Home_Page.png)
+  ![Home Page](Milestone_2/mockups/Home_Page.png)
 
 - **Página de Login**  
   ![Login Page](Milestone_1/mockups/Log_In.png)
