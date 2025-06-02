@@ -230,6 +230,8 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
   - Gera uma **boleta de compra** em PDF via `window.print()`, contendo:
     - Nome do comprador, produtos adquiridos, preços e total.
     ![Page Admin](Milestone_2/imagenes/Finalizar_Compra.png)
+  - Ele está conectado com o BEECEPTOR para poder diminuir o estoque dos produtos, e você pode ver isso porque na página “produto_individual.html” sai o estoque do produto, ao fazer as compras você poderá ver que ele diminui o estoque daquele produto.
+    ![Page Admin](Milestone_2/imagenes/beeceptor.png)
 
 - **Página de perfil do cliente (`usuario.html`)**:
   - Permite ao cliente visualizar e editar seus dados pessoais.
