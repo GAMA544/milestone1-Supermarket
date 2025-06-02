@@ -188,24 +188,26 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
 - **Login com diferenciação de perfis**:
   - O sistema reconhece o tipo de usuário após o login.
   - **Clientes** são redirecionados para a página de catálogo.
-    ![Page Produtos](Milestone_2/mockups/Home_Page.png)
+    ![Page Produtos](Milestone_2/imagenes/Page_Productos.png)
   - **Administradores** são redirecionados para o painel administrativo.
-    ![Page Produtos](Milestone_2/mockups/Home_Page.png)
+   ![Page Admin](Milestone_2/imagenes/Inicio_Admin)
 
 - **Persistência da sessão com `localStorage`**:
   - A sessão do usuário permanece ativa entre páginas.
   - O nome do usuário logado é exibido dinamicamente no cabeçalho.
+  ![Page Admin](Milestone_2/imagenes/Login_Dinamico.png)
 
 - **Formulários com validações e máscaras**:
   - Aplicação de máscaras automáticas para CPF e número de telefone.
   - Campos obrigatórios como nome, email e senha são validados no cliente.
-
+  ![Page Admin](Milestone_2/imagenes/Parametros_ingresodeDados.png)
 ---
 
 #### 🛒 Funcionalidades do Cliente
 
 - **Visualização de produtos por categoria**:
   - Catálogo dinâmico com filtro por categorias como "Frutas", "Bebidas", etc.
+  ![Page Admin](Milestone_2/imagenes/Categorias}.png)
 
 - **Renderização automática dos produtos**:
   - Os produtos são carregados a partir do `localStorage` e exibidos dinamicamente na página `Produtos_Page.html`.
@@ -213,27 +215,32 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
 - **Página de produto individual (`Produto_Individual.html`)**:
   - Exibe imagem, descrição e informações detalhadas do produto.
   - Possui botão para adicionar diretamente ao carrinho.
-
+  ![Page Admin](Milestone_2/imagenes/Producto_Individual.png)
 - **Carrinho de compras dinâmico (`carrito_compras.html`)**:
   - Adição e remoção de produtos em tempo real.
   - Atualização automática de quantidades e preços.
   - Itens persistem entre sessões via `localStorage`.
-
+  ![Page Admin](Milestone_2/imagenes/Carrito.png)
 - **Resumo da compra**:
   - Quantidade total de itens e valor final visíveis e atualizados dinamicamente.
+    ![Page Admin](Milestone_2/imagenes/Resumo_Orden.png)
 
 - **Finalização da compra e geração de comprovante**:
   - Página `pagamento.html` simula o pagamento com qualquer número de cartão.
   - Gera uma **boleta de compra** em PDF via `window.print()`, contendo:
     - Nome do comprador, produtos adquiridos, preços e total.
+    ![Page Admin](Milestone_2/imagenes/Finalizar_Compra.png)
 
 - **Página de perfil do cliente (`usuario.html`)**:
   - Permite ao cliente visualizar e editar seus dados pessoais.
+  ![Page Admin](Milestone_2/imagenes/Usuario.png)
 
 - **Formulário funcional de contato**:
   - A página `contactopage.html` permite que clientes enviem sugestões e dúvidas.
   - As mensagens são redirecionadas para `supermarketnest9@gmail.com` via `mailto:`.
+    ![Page Admin](Milestone_2/imagenes/Contactanos.png)
   - E suas avaliações são enviadas para o endereço de e-mail que criamos para a empresa.
+    ![Page Admin](Milestone_2/imagenes/Correo.png)
     
 - **Finalização da compra e geração de comprovante**:
   - A página `pagamento.html` permite ao cliente revisar os dados do pedido e confirmar a compra.
@@ -244,9 +251,10 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
     - Data/hora do pedido.
   - O documento gerado é estruturado para ser impresso ou salvo como PDF, servindo como recibo oficial da compra.
   - Todos os dados são renderizados dinamicamente com base no conteúdo do `localStorage` e no estado do carrinho.
+    ![Page Admin](Milestone_2/imagenes/Boleta.png)    
 - **Função para logout sua conta de usuário**:
   - Há uma função para fazer o logout do usuário quando você clica no nome do usuário.
-    
+    ![Page Admin](Milestone_2/imagenes/Logout.png) 
 ---
 
 #### 🛠️ Funcionalidades do Administrador
@@ -254,20 +262,23 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
 - **Área administrativa exclusiva**:
   - Administradores autenticados acessam uma interface própria com menu de navegação exclusivo.
   - E tem uma seção especial para retornar à página de comando do administrador.
-
+  ![Page Admin](Milestone_2/imagenes/admin_menu.png) 
 - **CRUD de produtos**:
   - Visualizar todos os produtos existentes.
   - Adicionar novos produtos com imagem, descrição, preço e estoque.
   - Editar produtos cadastrados.
   - Excluir produtos do sistema.
-
+    ![Page Admin](Milestone_2/imagenes/Admin_products.png)
+  ![Page Admin](Milestone_2/imagenes/AdicionarProductoNuevo.png)
+  ![Page Admin](Milestone_2/imagenes/Editar_Producto.png) 
 - **CRUD de usuários**:
   - Visualizar a lista completa de clientes e administradores.
   - Editar dados dos usuários registrados.
-
+  ![Page Admin](Milestone_2/imagenes/Admin_usuarios.png)
+  ![Page Admin](Milestone_2/imagenes/Editar_Usuario.png) 
 - **Cadastro de novos administradores**:
   - Através da interface `admin-add-admin.html`.
-
+  ![Page Admin](Milestone_2/imagenes/AdicionarAdmin.png)
 - **Validações administrativas**:
   - Formulários com máscara para CPF e validação de número de telefone e email.
 
