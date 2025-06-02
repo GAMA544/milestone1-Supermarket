@@ -56,10 +56,10 @@ As seguintes páginas foram desenvolvidas com HTML5 e CSS3:
   ![Home Page](Milestone_2/mockups/Home_Page.png)
 
 - **Página de Login**  
-  ![Login Page](Milestone_1/mockups/Log_In.png)
+  ![Login Page](Milestone_2/mockups/Log_In.png)
 
 - **Página de Contato**  
-  ![Contato Page](Milestone_1/mockups/Contáctanos.png)
+  ![Contato Page](Milestone_2/mockups/Contáctanos.png)
 
 ### 3.2. Telas Criadas em Mockup (Figma)
 
@@ -73,16 +73,16 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
 #### 🖼️ mockups (Figma)
 
 - **Catálogo de Produtos**  
-  ![Catálogo](Milestone_1/mockups/productspage.png)
+  ![Catálogo](Milestone_2/mockups/productspage.png)
 
 - **Detalhes do produto**
-  ![Detalhes](Milestone_1/mockups/Sobreo_o_Producto.png)
+  ![Detalhes](Milestone_2/mockups/Sobreo_o_Producto.png)
 
 - **Carrinho de compras**
-  ![Carrinho](Milestone_1/mockups/Carrito_de_Compras.png)
+  ![Carrinho](Milestone_2/mockups/Carrito_de_Compras.png)
 
 - **Registro de usuário**
-  ![Registro](Milestone_1/mockups/Register_de_Usuarios.png)
+  ![Registro](Milestone_2/mockups/Register_de_Usuarios.png)
 
 ---
 
@@ -90,7 +90,7 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
 
 Abaixo está o diagrama representando as rotas entre as principais páginas do sistema:
 
-![Nagacion](Milestone_1/navegation_diagram/navegation_diagram.jpg)
+![Nagacion](Milestone_2/navegation_diagram/navegation_diagram.jpg)
 
 ---
 
