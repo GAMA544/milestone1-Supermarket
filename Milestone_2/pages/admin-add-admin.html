@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Conta - Nest Supermarkt</title>
+  <link rel="stylesheet" href="../styles/styles_general.css">
+  <link rel="stylesheet" href="../styles/register.css">
+  
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img class="logo" src="../imagenes/logo_supermarket.png" alt="Logo Nest Supermarket">
+    <nav class="links-nav">
+      <a href="admin-productos.html">Produtos</a>
+      <a href="admin-usuarios.html" class="painel-activo">Usuários</a>
+    </nav>
+    <div id="user-info"></div>
+  </header>
+
+  <!-- Formulário de registro -->
+  <main class="register-main">
+    <form class="formulario-registro">
+      <h1>Adicionar Administrador</h1>
+
+      <label for="documento">Documento o Código</label>
+      <input type="text" id="documento" name="documento" placeholder="Digite seu CPF ou outro código" required>
+
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+      <label for="email">Endereço de e-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+
+      <button type="submit">Cadastrar Administrador</button>
+    </form>
+  </main>
+
+<script src="../scripts/addAdmin.js"></script>
+
+</body>
+</html>

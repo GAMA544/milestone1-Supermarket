@@ -1,0 +1,78 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.user-container {
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.user-container h2 {
+  font-size: 1.8rem;
+  color: #2E7D32;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.user-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-container li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.user-container strong {
+  display: inline-block;
+  width: 140px;
+  color: #555;
+}
+
+.user-avatar {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.eye-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.eye-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.password-field {
+  letter-spacing: 2px;
+  font-family: monospace;
+}
