@@ -270,6 +270,7 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
   - Adicionar novos produtos com imagem, descrição, preço e estoque.
   - Editar produtos cadastrados.
   - Excluir produtos do sistema.
+  - Ele está conectado com o BEECEPTOR para poder editar o produto, enviando novas atualizações e editando o produto
     ![Page Admin](Milestone_2/imagenes/Admin_products.png)
   ![Page Admin](Milestone_2/imagenes/AdicionarProductoNuevo.png)
   ![Page Admin](Milestone_2/imagenes/Editar_Producto.png) 
