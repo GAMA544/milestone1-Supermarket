@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Usuário</title>
+  <link rel="stylesheet" href="../styles/styles_general.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+  <link rel="stylesheet" href="../styles/admin-edit.css">
+</head>
+<body>
+
+    <header>
+    <img class="logo" src="../imagenes/logo_supermarket.png" alt="Logo Nest Supermarket">
+    <nav class="links-nav">
+      <a href="admin-productos.html">Produtos</a>
+      <a href="admin-usuarios.html"  class="painel-activo">Usuários</a>
+    </nav>
+    <div id="user-info"></div>
+  </header>
+
+  <main class="container-formulario">
+    <h1>Editar Usuário</h1>
+    <p class="subtitle">Atualize os dados do usuário abaixo</p>
+
+    <form id="form-usuario">
+      <input type="hidden" id="id">
+
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" required>
+      </div>
+
+      <div class="form-group">
+        <label for="role">Função</label>
+        <select id="role" required>
+          <option value="client">Cliente</option>
+          <option value="admin">Administrador</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status" required>
+          <option value="ativo">Ativo</option>
+          <option value="inativo">Inativo</option>
+        </select>
+      </div>
+
+      <button type="submit">Salvar</button>
+    </form>
+  </main>
+
+  <script src="../scripts/editarUsuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Conta - Nest Supermarkt</title>
+  <link rel="stylesheet" href="../styles/admin-edit.css">
+</head>
+<body>
+    <header>
+    <img class="logo" src="../imagenes/logo_supermarket.png" alt="Logo Nest Supermarket">
+    <nav class="links-nav">
+      <a href="admin-productos.html" class="painel-activo">Produtos</a>
+      <a href="admin-usuarios.html">Usuários</a>
+    </nav>
+    <div id="user-info"></div>
+  </header>
+  <main class="container-formulario">
+    <h1>Adicionar Produto</h1>
+    <form id="form-add-produto">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <input type="text" id="descricao" required>
+      </div>
+
+      <div class="form-group">
+        <label for="imagem">URL da Imagem</label>
+        <input type="text" id="imagem" required>
+      </div>
+
+      <div class="form-group">
+        <label for="preco">Preço (R$)</label>
+        <input type="number" id="preco" step="0.01" min="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="estoque">Estoque</label>
+        <input type="number" id="estoque" min="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="vendidos">Vendidos</label>
+        <input type="number" id="vendidos" min="0" value="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="categoria">Categoria</label>
+        <select id="categoria" required>
+          <option value="">Selecione...</option>
+          <option>Frutas</option>
+          <option>Vegetais</option>
+          <option>Carnes</option>
+          <option>Lanches</option>
+          <option>Congelados</option>
+          <option>Enlatados</option>
+          <option>Laticínios</option>
+          <option>Bebidas</option>
+          <option>Padaria</option>
+          <option>Cereais</option>
+          <option>Salgadinhos</option>
+          <option>Doces</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" required>
+      </div>
+
+      <div class="form-group">
+        <label for="unidade">apresentacao</label>
+        <select id="unidade" required>
+          <option value="">Selecione...</option>
+          <option value="unidade">Unidade</option>
+          <option value="kg">Por Kg</option>
+        </select>
+      </div>
+
+      <button type="submit">Salvar</button>
+    </form>
+  </main>
+
+  <script src="../scripts/addProduto.js"></script>
+</body>
+</html>
