@@ -53,13 +53,13 @@ As seguintes páginas foram desenvolvidas com HTML5 e CSS3:
 #### 🖼️ Capturas das Telas HTML Implementadas
 
 - **Home Page**  
-  ![Home Page](Milestone_2/mockups/Home_Page.png)
+  ![Home Page](imgs/mockups/Home_Page.png)
 
 - **Página de Login**  
-  ![Login Page](Milestone_2/mockups/Log_In.png)
+  ![Login Page](imgs/mockups/Log_In.png)
 
 - **Página de Contato**  
-  ![Contato Page](Milestone_2/mockups/Contáctanos.png)
+  ![Contato Page](imgs/mockups/Contáctanos.png)
 
 ### 3.2. Telas Criadas em Mockup (Figma)
 
@@ -73,16 +73,16 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
 #### 🖼️ mockups (Figma)
 
 - **Catálogo de Produtos**  
-  ![Catálogo](Milestone_2/mockups/productspage.png)
+  ![Catálogo](imgs/mockups/productspage.png)
 
 - **Detalhes do produto**
-  ![Detalhes](Milestone_2/mockups/Sobreo_o_Producto.png)
+  ![Detalhes](imgs/mockups/Sobreo_o_Producto.png)
 
 - **Carrinho de compras**
-  ![Carrinho](Milestone_2/mockups/Carrito_de_Compras.png)
+  ![Carrinho](imgs/mockups/Carrito_de_Compras.png)
 
 - **Registro de usuário**
-  ![Registro](Milestone_2/mockups/Register_de_Usuarios.png)
+  ![Registro](imgs/mockups/Register_de_Usuarios.png)
 
 ---
 
@@ -90,7 +90,7 @@ As telas abaixo foram criadas no Figma e exportadas como imagens:
 
 Abaixo está o diagrama representando as rotas entre as principais páginas do sistema:
 
-![Nagacion](Milestone_2/navegation_diagram/navegation_diagram.jpg)
+![Nagacion](imgs/navegation_diagram/navegation_diagram.jpg)
 
 ---
 
@@ -188,26 +188,26 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
 - **Login com diferenciação de perfis**:
   - O sistema reconhece o tipo de usuário após o login.
   - **Clientes** são redirecionados para a página de catálogo.
-    ![Page Produtos](Milestone_2/imagenes/Page_Productos.png)
+    ![Page Produtos](imgs/imagenes/Page_Productos.png)
   - **Administradores** são redirecionados para o painel administrativo.
-   ![Page Admin](Milestone_2/imagenes/Inicio_Admin)
+   ![Page Admin](imgs/imagenes/Inicio_Admin)
 
 - **Persistência da sessão com `localStorage`**:
   - A sessão do usuário permanece ativa entre páginas.
   - O nome do usuário logado é exibido dinamicamente no cabeçalho.
-  ![Page Admin](Milestone_2/imagenes/Login_Dinamico.png)
+  ![Page Admin](imgs/imagenes/Login_Dinamico.png)
 
 - **Formulários com validações e máscaras**:
   - Aplicação de máscaras automáticas para CPF e número de telefone.
   - Campos obrigatórios como nome, email e senha são validados no cliente.
-  ![Page Admin](Milestone_2/imagenes/Parametros_ingresodeDados.png)
+  ![Page Admin](imgs/imagenes/Parametros_ingresodeDados.png)
 ---
 
 #### 🛒 Funcionalidades do Cliente
 
 - **Visualização de produtos por categoria**:
   - Catálogo dinâmico com filtro por categorias como "Frutas", "Bebidas", etc.
-  ![Page Admin](Milestone_2/imagenes/Categorias}.png)
+  ![Page Admin](imgs/imagenes/Categorias}.png)
 
 - **Renderização automática dos produtos**:
   - Os produtos são carregados a partir do `localStorage` e exibidos dinamicamente na página `Produtos_Page.html`.
@@ -215,34 +215,34 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
 - **Página de produto individual (`Produto_Individual.html`)**:
   - Exibe imagem, descrição e informações detalhadas do produto.
   - Possui botão para adicionar diretamente ao carrinho.
-  ![Page Admin](Milestone_2/imagenes/Producto_Individual.png)
+  ![Page Admin](imgs/imagenes/Producto_Individual.png)
 - **Carrinho de compras dinâmico (`carrito_compras.html`)**:
   - Adição e remoção de produtos em tempo real.
   - Atualização automática de quantidades e preços.
   - Itens persistem entre sessões via `localStorage`.
-  ![Page Admin](Milestone_2/imagenes/Carrito.png)
+  ![Page Admin](imgs/imagenes/Carrito.png)
 - **Resumo da compra**:
   - Quantidade total de itens e valor final visíveis e atualizados dinamicamente.
-    ![Page Admin](Milestone_2/imagenes/Resumo_Orden.png)
+    ![Page Admin](imgs/imagenes/Resumo_Orden.png)
 
 - **Finalização da compra e geração de comprovante**:
   - Página `pagamento.html` simula o pagamento com qualquer número de cartão.
   - Gera uma **boleta de compra** em PDF via `window.print()`, contendo:
     - Nome do comprador, produtos adquiridos, preços e total.
-    ![Page Admin](Milestone_2/imagenes/Finalizar_Compra.png)
+    ![Page Admin](imgs/imagenes/Finalizar_Compra.png)
   - Ele está conectado com o BEECEPTOR para poder diminuir o estoque dos produtos, e você pode ver isso porque na página “produto_individual.html” sai o estoque do produto, ao fazer as compras você poderá ver que ele diminui o estoque daquele produto.
-    ![Page Admin](Milestone_2/imagenes/beeceptor.png)
+    ![Page Admin](imgs/imagenes/beeceptor.png)
 
 - **Página de perfil do cliente (`usuario.html`)**:
   - Permite ao cliente visualizar e editar seus dados pessoais.
-  ![Page Admin](Milestone_2/imagenes/Usuario.png)
+  ![Page Admin](imgs/imagenes/Usuario.png)
 
 - **Formulário funcional de contato**:
   - A página `contactopage.html` permite que clientes enviem sugestões e dúvidas.
   - As mensagens são redirecionadas para `supermarketnest9@gmail.com` via `mailto:`.
-    ![Page Admin](Milestone_2/imagenes/Contactanos.png)
+    ![Page Admin](imgs/imagenes/Contactanos.png)
   - E suas avaliações são enviadas para o endereço de e-mail que criamos para a empresa.
-    ![Page Admin](Milestone_2/imagenes/Correo.png)
+    ![Page Admin](imgs/imagenes/Correo.png)
     
 - **Finalização da compra e geração de comprovante**:
   - A página `pagamento.html` permite ao cliente revisar os dados do pedido e confirmar a compra.
@@ -253,10 +253,10 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
     - Data/hora do pedido.
   - O documento gerado é estruturado para ser impresso ou salvo como PDF, servindo como recibo oficial da compra.
   - Todos os dados são renderizados dinamicamente com base no conteúdo do `localStorage` e no estado do carrinho.
-    ![Page Admin](Milestone_2/imagenes/Boleta.png)    
+    ![Page Admin](imgs/imagenes/Boleta.png)    
 - **Função para logout sua conta de usuário**:
   - Há uma função para fazer o logout do usuário quando você clica no nome do usuário.
-    ![Page Admin](Milestone_2/imagenes/Logout.png) 
+    ![Page Admin](imgs/imagenes/Logout.png) 
 ---
 
 #### 🛠️ Funcionalidades do Administrador
@@ -264,24 +264,24 @@ O sistema cumpre os requisitos básicos estabelecidos no Milestone 1 e, no Miles
 - **Área administrativa exclusiva**:
   - Administradores autenticados acessam uma interface própria com menu de navegação exclusivo.
   - E tem uma seção especial para retornar à página de comando do administrador.
-  ![Page Admin](Milestone_2/imagenes/admin_menu.png) 
+  ![Page Admin](imgs/imagenes/admin_menu.png) 
 - **CRUD de produtos**:
   - Visualizar todos os produtos existentes.
   - Adicionar novos produtos com imagem, descrição, preço e estoque.
   - Editar produtos cadastrados.
   - Excluir produtos do sistema.
   - Ele está conectado com o BEECEPTOR para poder editar o produto, enviando novas atualizações e editando o produto
-    ![Page Admin](Milestone_2/imagenes/Admin_products.png)
-  ![Page Admin](Milestone_2/imagenes/AdicionarProductoNuevo.png)
-  ![Page Admin](Milestone_2/imagenes/Editar_Producto.png) 
+    ![Page Admin](imgs/imagenes/Admin_products.png)
+  ![Page Admin](imgs/imagenes/AdicionarProductoNuevo.png)
+  ![Page Admin](imgs/imagenes/Editar_Producto.png) 
 - **CRUD de usuários**:
   - Visualizar a lista completa de clientes e administradores.
   - Editar dados dos usuários registrados.
-  ![Page Admin](Milestone_2/imagenes/Admin_usuarios.png)
-  ![Page Admin](Milestone_2/imagenes/Editar_Usuario.png) 
+  ![Page Admin](imgs/imagenes/Admin_usuarios.png)
+  ![Page Admin](imgs/imagenes/Editar_Usuario.png) 
 - **Cadastro de novos administradores**:
   - Através da interface `admin-add-admin.html`.
-  ![Page Admin](Milestone_2/imagenes/AdicionarAdmin.png)
+  ![Page Admin](imgs/imagenes/AdicionarAdmin.png)
 - **Validações administrativas**:
   - Formulários com máscara para CPF e validação de número de telefone e email.
 
