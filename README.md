@@ -397,3 +397,181 @@ Todos os testes foram executados com sucesso. As funcionalidades estão operacio
    git clone https://github.com/GAMA544/milestone1-Supermarket.git
 
 
+# 📄 Relatório de Projeto – Milestone 3: Aplicação Completa com Backend e Banco de Dados
+
+## 1. Visão Geral
+
+Nesta última etapa do projeto, a aplicação da loja online foi finalizada com todas as funcionalidades implementadas, incluindo:
+
+- Integração completa com **servidor Node.js**
+- Conexão real com banco de dados **MongoDB Atlas**
+- Migração total dos dados do `localStorage` para **coleções MongoDB**
+- Implementação de rotas REST para usuários e produtos
+- Deploy local totalmente funcional, com persistência e controle de sessão
+
+---
+
+## 2. Migração de Dados e Backend
+
+### 🔄 Migração de `localStorage` para MongoDB
+
+Anteriormente, todas as funcionalidades da loja (usuários, produtos, carrinho) eram baseadas em `localStorage`, o que limitava a persistência e escalabilidade. Agora:
+
+- Os **produtos** e **usuários** são armazenados em coleções no MongoDB Atlas (`nest_supermarket.produtos` e `nest_supermarket.usuarios`)
+- As operações de leitura, criação, edição e exclusão são feitas via **API REST**
+- Scripts JS como `login.js`, `register.js`, `renderProdutos.js`, `admin-edit-product.js` foram **modificados para usar `fetch()` e consumir as rotas do backend**
+
+---
+
+## 3. Backend: Estrutura e Tecnologias
+
+### 📁 Estrutura
+
+```
+backend/
+├── .env                     # String de conexão com MongoDB Atlas
+├── models/
+│   ├── Produto.js           # Esquema do Produto (Mongoose)
+│   └── Usuario.js           # Esquema do Usuário (Mongoose)
+├── routes/
+│   ├── produtos.js          # Rotas GET, POST, PUT, DELETE para produtos
+│   ├── usuarios.js          # Autenticação, criação e edição de usuários
+│   └── initUser.js          # Cria admin inicial se não existir
+├── server.js                # Inicialização do servidor Express
+├── package.json             # Dependências e scripts
+```
+
+### 🧠 Tecnologias Usadas
+
+- **Node.js + Express**: servidor e rotas
+- **MongoDB Atlas**: banco de dados NoSQL na nuvem
+- **Mongoose**: ODM para modelar dados
+- **dotenv**: carregamento da string de conexão segura
+- **CORS e JSON Middleware**: configuração do Express para lidar com requisições web
+
+---
+
+## 4. Funcionalidades Completas
+
+| Funcionalidade                          | Status |
+|-----------------------------------------|--------|
+| Login com sessão                        | ✅     |
+| Redirecionamento por tipo de usuário    | ✅     |
+| CRUD completo de produtos (MongoDB)     | ✅     |
+| CRUD completo de usuários (MongoDB)     | ✅     |
+| Carrinho funcional                      | ✅     |
+| Geração de boleta                       | ✅     |
+| Formulário de contato funcional         | ✅     |
+| Autenticação com email/senha            | ✅     |
+| Admin inicial criado automaticamente    | ✅     |
+| Atualização de estoque após compra      | ✅     |
+
+---
+
+## 5. Execução do Projeto
+
+### 5.1. Pré-requisitos
+
+- Node.js instalado (v16 ou superior)
+- Conexão com internet (MongoDB Atlas)
+- Navegador moderno
+
+### 5.2. Instalação e Execução (passo a passo)
+
+#### 📥 Clonar o repositório
+
+```bash
+git clone https://github.com/GAMA544/milestone1-Supermarket.git
+cd milestone1-Supermarket/Milestone_3/backend
+```
+
+#### 📦 Instalar dependências do backend
+
+```bash
+npm install
+```
+
+#### ⚙️ Configurar variáveis de ambiente
+
+O projeto já inclui o arquivo `.env` com:
+
+```env
+MONGO_URI=mongodb+srv://GAMA:70473411%40%2Eobj@m0.rtudete.mongodb.net/nest_supermarket
+```
+
+> Caso necessário, substitua com sua própria URI do MongoDB Atlas.
+
+#### ▶️ Rodar o servidor
+
+```bash
+node server.js
+```
+
+Você verá no terminal:
+
+```
+Servidor rodando na porta 3000
+Conectado ao MongoDB Atlas
+```
+
+---
+
+### 5.3. Executar o Frontend
+
+1. Acesse a pasta `pages`:
+
+```bash
+cd ../pages
+```
+
+2. Abra o arquivo `Produtos_Page.html` com um navegador (ou use extensão Live Server do VSCode)
+
+---
+
+### 5.4. Usuário Administrador Padrão
+
+Foi criado automaticamente um admin padrão na coleção `usuarios`:
+
+```txt
+Email: nest@empresa.com
+Senha: admin123
+```
+
+---
+
+## 6. Observações Técnicas
+
+- O código está modularizado: rotas e modelos separados
+- A coleção `produtos` já vem com produtos registrados para testes
+- O front consome as rotas da API utilizando `fetch` de forma assíncrona
+- Ao fazer uma compra, o estoque é atualizado no banco em tempo real
+- O projeto está pronto para ser publicado em plataformas como Render, Vercel ou Railway com pequenas adaptações
+
+---
+
+## 7. Capturas MongoDB Atlas
+
+📸 Exemplo de documento da coleção `usuarios`:
+
+![usuarios no MongoDB](imgs/imagenes/mongodb_usuarios.png)
+
+📸 Exemplo de coleção `produtos`:
+
+![produtos no MongoDB](imgs/imagenes/mongodb_produtos.png)
+
+---
+
+## ✅ Check de Requisitos Finais
+
+| Item                                                     | Ok |
+|----------------------------------------------------------|----|
+| Backend com Node.js e Express                            | ✅ |
+| Conexão com MongoDB Atlas                                | ✅ |
+| Código bem comentado e formatado                         | ✅ |
+| API funcional com rotas para usuários e produtos          | ✅ |
+| Arquivo `index.html` existente                           | ✅ |
+| Relatório atualizado com este milestone final            | ✅ |
+| Projeto completo no GitHub                               | ✅ |
+
+
+
