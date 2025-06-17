@@ -510,8 +510,8 @@ node server.js
 Você verá no terminal:
 
 ```
-Servidor rodando na porta 3000
-Conectado ao MongoDB Atlas
+🚀 Servidor rodando na porta 3000: http://localhost:3000
+✅ Conectado a MongoDB Atlas
 ```
 
 ---
@@ -545,7 +545,6 @@ Senha: admin123
 - A coleção `produtos` já vem com produtos registrados para testes
 - O front consome as rotas da API utilizando `fetch` de forma assíncrona
 - Ao fazer uma compra, o estoque é atualizado no banco em tempo real
-- O projeto está pronto para ser publicado em plataformas como Render, Vercel ou Railway com pequenas adaptações
 
 ---
 
@@ -569,7 +568,6 @@ Senha: admin123
 | Conexão com MongoDB Atlas                                | ✅ |
 | Código bem comentado e formatado                         | ✅ |
 | API funcional com rotas para usuários e produtos          | ✅ |
-| Arquivo `index.html` existente                           | ✅ |
 | Relatório atualizado com este milestone final            | ✅ |
 | Projeto completo no GitHub                               | ✅ |
 
